@@ -46,3 +46,20 @@ function resetTimer() {
   elapsedTime = 0;
 
   displayHours.textContent = "00";
+  displayMinutes.textContent = "00";
+  displaySeconds.textContent = "00";
+  displayMilliseconds.textContent = "000";
+}
+
+startButton.addEventListener("click", () => {
+  startTimer();
+});
+
+pauseButton.addEventListener("click", () => {
+  pauseTimer();
+});
+
+resetButton.addEventListener("click", () => {
+  resetTimer();
+});
+
